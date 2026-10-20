@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+tmp/
+output/pdf/
+.impeccable/review/
+*.tsbuildinfo
+.DS_Store
+.env*
+!.env.example
+/app/\[locale\]/blog/\[slug\]/page.tsx

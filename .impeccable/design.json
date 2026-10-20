@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T19:33:29.550479+00:00",
+  "title": "Design System: Loredana Piazza",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00528 106.50)",
+          "oklch(26.43% 0.00528 106.50)",
+          "oklch(37.86% 0.00528 106.50)",
+          "oklch(49.29% 0.00528 106.50)",
+          "oklch(60.71% 0.00528 106.50)",
+          "oklch(72.14% 0.00528 106.50)",
+          "oklch(83.57% 0.00528 106.50)",
+          "oklch(95.00% 0.00528 106.50)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.03381 255.79)",
+          "oklch(26.43% 0.03381 255.79)",
+          "oklch(37.86% 0.03381 255.79)",
+          "oklch(49.29% 0.03381 255.79)",
+          "oklch(60.71% 0.03381 255.79)",
+          "oklch(72.14% 0.03381 255.79)",
+          "oklch(83.57% 0.03381 255.79)",
+          "oklch(95.00% 0.03381 255.79)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.02698 258.37)",
+          "oklch(26.43% 0.02698 258.37)",
+          "oklch(37.86% 0.02698 258.37)",
+          "oklch(49.29% 0.02698 258.37)",
+          "oklch(60.71% 0.02698 258.37)",
+          "oklch(72.14% 0.02698 258.37)",
+          "oklch(83.57% 0.02698 258.37)",
+          "oklch(95.00% 0.02698 258.37)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15.00% 0.18952 274.28)",
+          "oklch(26.43% 0.18952 274.28)",
+          "oklch(37.86% 0.18952 274.28)",
+          "oklch(49.29% 0.18952 274.28)",
+          "oklch(60.71% 0.18952 274.28)",
+          "oklch(72.14% 0.18952 274.28)",
+          "oklch(83.57% 0.18952 274.28)",
+          "oklch(95.00% 0.18952 274.28)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Accent hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.16278 273.67)",
+          "oklch(26.43% 0.16278 273.67)",
+          "oklch(37.86% 0.16278 273.67)",
+          "oklch(49.29% 0.16278 273.67)",
+          "oklch(60.71% 0.16278 273.67)",
+          "oklch(72.14% 0.16278 273.67)",
+          "oklch(83.57% 0.16278 273.67)",
+          "oklch(95.00% 0.16278 273.67)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.00426 236.50)",
+          "oklch(26.43% 0.00426 236.50)",
+          "oklch(37.86% 0.00426 236.50)",
+          "oklch(49.29% 0.00426 236.50)",
+          "oklch(60.71% 0.00426 236.50)",
+          "oklch(72.14% 0.00426 236.50)",
+          "oklch(83.57% 0.00426 236.50)",
+          "oklch(95.00% 0.00426 236.50)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Wash",
+        "tonalRamp": [
+          "oklch(15.00% 0.01075 280.47)",
+          "oklch(26.43% 0.01075 280.47)",
+          "oklch(37.86% 0.01075 280.47)",
+          "oklch(49.29% 0.01075 280.47)",
+          "oklch(60.71% 0.01075 280.47)",
+          "oklch(72.14% 0.01075 280.47)",
+          "oklch(83.57% 0.01075 280.47)",
+          "oklch(95.00% 0.01075 280.47)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home display",
+        "purpose": "Name in the home hero."
+      },
+      "heading": {
+        "displayName": "Page heading",
+        "purpose": "General page heading; page-specific CSS may override."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Main reading text."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Primary link actions."
+      }
+    },
+    "motion": [
+      {
+        "name": "action-transition",
+        "value": "0.2s ease",
+        "purpose": "Button background and text-link arrow transitions."
+      },
+      {
+        "name": "hero-arrive",
+        "value": "0.75s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Hero name enters from translateY(7px) and blur(3px); disabled for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intermediate-max",
+        "value": "1000px"
+      },
+      {
+        "name": "small-max",
+        "value": "650px"
+      }
+    ],
+    "previewNotes": "Tonal ramps are synthetic OKLCH preview strips, not shipped palette tokens. Component snippets use CSS variable fallbacks for standalone rendering. No shadows are defined."
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled link action; compact variant is used for PDF download.",
+      "html": "<a class=\"ds-button-primary\" href=\"#preview\">Explore my CV<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button-primary{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:22px;background:var(--ink,#202c3c);color:#fff;text-decoration:none;padding:13px 22px;min-height:50px;border-radius:5px;font-size:.9rem;font-weight:500;line-height:1.65;transition:background .2s}.ds-button-primary:hover{background:var(--accent,#434ac6);color:#fff}.ds-button-primary:focus-visible{outline:3px solid var(--accent,#434ac6);outline-offset:5px;border-radius:2px;}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
+    },
+    {
+      "name": "Small download button",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Filled link action; compact variant is used for PDF download.",
+      "html": "<a class=\"ds-button-small\" href=\"#preview\">Download PDF<svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5\"/></svg></a>",
+      "css": ".ds-button-small{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ink,#202c3c);color:#fff;text-decoration:none;padding:12px 17px;min-height:46px;border-radius:5px;font-size:.8rem;white-space:nowrap;font-weight:500;line-height:1.65;transition:background .2s}.ds-button-small:hover{background:var(--accent,#434ac6);color:#fff}.ds-button-small:focus-visible{outline:3px solid var(--accent,#434ac6);outline-offset:5px;border-radius:2px;}@media(prefers-reduced-motion:reduce){.ds-button-small{transition:none}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "description": "Unfilled action with a moving inline arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"#preview\">View projects<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-text-link{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);display:inline-flex;align-items:center;gap:12px;font-weight:550;font-size:.9rem;text-decoration:none;line-height:1.5;min-height:30px;color:var(--ink,#202c3c)}.ds-text-link svg{flex-shrink:0;transition:transform .2s}.ds-text-link:hover{color:var(--accent,#434ac6)}.ds-text-link:hover svg{transform:translateX(3px)}.ds-text-link:focus-visible{outline:3px solid var(--accent,#434ac6);outline-offset:5px;border-radius:2px;}@media(prefers-reduced-motion:reduce){.ds-text-link svg{transition:none}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Current page uses an accent underline. Mobile places navigation on a second header row.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#home\" aria-current=\"page\">Home</a><a href=\"#cv\">CV</a><a href=\"#projects\">Projects</a><a href=\"#blog\">Blog</a></nav>",
+      "css": ".ds-nav{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);display:flex;gap:30px}.ds-nav a{font-size:.88rem;font-weight:500;text-decoration:none;padding:8px 0;color:var(--muted,#5a6473);line-height:1.65}.ds-nav a[aria-current]{color:var(--ink,#202c3c);text-decoration:underline;text-decoration-color:var(--accent,#434ac6);text-underline-offset:.6em}.ds-nav a:hover{color:var(--accent,#434ac6)}.ds-nav a:focus-visible{outline:3px solid var(--accent,#434ac6);outline-offset:5px;border-radius:2px;}@media(max-width:650px){.ds-nav{gap:25px}.ds-nav a{font-size:.84rem;padding-block:6px}}"
+    },
+    {
+      "name": "Contact panel",
+      "kind": "card",
+      "refersTo": "contact-panel",
+      "description": "Tinted contact surface, with supporting copy.",
+      "html": "<section class=\"ds-contact\"><h2>Let’s connect.</h2><p>For a conversation about software, research, or a shared interest.</p></section>",
+      "css": ".ds-contact{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);background:var(--wash,#eeeff7);color:var(--ink,#202c3c);padding:44px 48px 46px;border-radius:8px;line-height:1.65}.ds-contact h2{margin:0;font-size:2rem;font-weight:550;line-height:1.17;letter-spacing:-.03em;text-wrap:balance}.ds-contact p{margin:12px 0 0;color:var(--muted,#5a6473)}@media(max-width:650px){.ds-contact{padding:30px 25px 32px}.ds-contact h2{font-size:1.7rem}}"
+    },
+    {
+      "name": "Development status",
+      "kind": "custom",
+      "description": "Informational text and a small dot.",
+      "html": "<p class=\"ds-status\">In development</p>",
+      "css": ".ds-status{font-family:var(--font,'DM Sans Variable','DM Sans',sans-serif);display:inline-flex;color:var(--accent-hover,#30369c);font-weight:500;font-size:.75rem;line-height:1.4;margin:12px 0 0;align-items:center;gap:7px}.ds-status:before{content:\"\";width:6px;height:6px;background:var(--accent,#434ac6);border-radius:50%;flex-shrink:0}"
+    }
+  ],
+  "narrative": {
+    "overview": "This documents the current provisional implementation of the requested clean, professional, uncluttered website. Detailed UI direction remains deferred; this is an implementation reference, not a new brand identity. The source of truth is `app/globals.css` and the rendered React components.\n\nThe page uses generous open space, navy text, restrained blue-purple accents and a single sans-serif family. Typographic hierarchy and fine horizontal rules organise content. English and German share the same visual system and accommodate their different text lengths.",
+    "keyCharacteristics": [
+      "Light backgrounds and readable text.",
+      "Spacious sections with clear headings.",
+      "Restrained accent colour and simple link actions."
+    ],
+    "rules": [],
+    "dos": [
+      "Do reuse the documented palette, typography and existing action patterns.",
+      "Do retain visible keyboard focus and reduced-motion handling.",
+      "Do verify English and German layouts at narrow widths."
+    ],
+    "donts": [
+      "Don't treat this provisional implementation as a user-approved final brand identity.",
+      "Don't replace the open section layout with decorative containers without a design request."
+    ]
+  }
+}

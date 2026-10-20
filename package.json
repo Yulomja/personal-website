@@ -1,0 +1,39 @@
+{
+  "name": "loredana-piazza-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run prepare:routes && next dev --hostname 127.0.0.1",
+    "build": "npm run validate:content && npm run prepare:routes && next build",
+    "start": "node scripts/serve.mjs",
+    "typecheck": "next typegen && tsc --noEmit --incremental false",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "validate:content": "node --import tsx scripts/validate-content.ts",
+    "prepare:routes": "node --import tsx scripts/prepare-routes.ts",
+    "test:export": "node tests/export-smoke.mjs",
+    "test:pages": "TEST_BASE_PATH=/personal-website node tests/export-smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "gray-matter": "4.0.3",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "rehype-sanitize": "6.0.0",
+    "rehype-stringify": "10.0.1",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.2",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
