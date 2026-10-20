@@ -28,13 +28,14 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "pdf"
 PUBLIC = ROOT / "public" / "cv"
-PORTRAIT = ROOT / "assets" / "cv-portrait.jpg"
+PORTRAIT = ROOT / "public" / "images" / "loredana-piazza.jpg"
 INK = colors.HexColor("#20283F")
 MUTED = colors.HexColor("#596176")
 ACCENT = colors.HexColor("#5446A6")
 RULE = colors.HexColor("#DDE0EA")
 EMAIL = "piazza.loredana@hotmail.com"
 LINKEDIN = "https://ch.linkedin.com/in/loredana-piazza"
+WEBSITE = "https://yulomja.github.io/personal-website"
 DOI = "https://doi.org/10.1186/s11671-025-04409-1"
 TITLE = (
     "Electrohydrodynamic redox printing vs. physical vapour deposition: "
@@ -138,21 +139,22 @@ def build(lang):
     def footer(canvas, _doc):
         canvas.saveState()
         if _doc.page == 1:
-            # Fit the dedicated CV portrait in the header without zooming or
-            # cropping the head. The source photograph stays untouched.
-            photo_width, photo_height = 25 * mm, 30 * mm
+            # Frame a wider head-and-upper-body view of the candid original.
+            # PDF clipping preserves the full head and leaves the source intact.
+            photo_width, photo_height = 27 * mm, 30 * mm
             photo_x = width - margin - photo_width
             photo_y = height - doc.topMargin - photo_height
             portrait = ImageReader(str(PORTRAIT))
             source_width, source_height = portrait.getSize()
-            scale = min(photo_width / source_width, photo_height / source_height)
-            drawn_width, drawn_height = source_width * scale, source_height * scale
+            crop_left, crop_top = source_width * 0.19, source_height * 0.11
+            crop_width, crop_height = source_width * 0.60, source_height * (4 / 9)
+            scale = max(photo_width / crop_width, photo_height / crop_height)
             clipping_path = canvas.beginPath()
             clipping_path.roundRect(photo_x, photo_y, photo_width, photo_height, 2.5)
             canvas.clipPath(clipping_path, stroke=0, fill=0)
-            canvas.drawImage(portrait, photo_x + (photo_width - drawn_width) / 2,
-                             photo_y + (photo_height - drawn_height) / 2,
-                             width=drawn_width, height=drawn_height)
+            canvas.drawImage(portrait, photo_x - crop_left * scale,
+                             photo_y + photo_height - (source_height - crop_top) * scale,
+                             width=source_width * scale, height=source_height * scale)
             canvas.restoreState()
             canvas.saveState()
         canvas.setStrokeColor(RULE)
@@ -170,7 +172,8 @@ def build(lang):
     p = lambda text, style="body": Paragraph(text, styles[style])
     header_content = [p("Loredana Piazza", "title"), p("Full-Stack Engineer", "role"), Spacer(1, 5),
              p(f'{data["location"]} · <link href="mailto:{EMAIL}">{EMAIL}</link>', "contact"),
-             p(f'<link href="{LINKEDIN}">linkedin.com/in/loredana-piazza</link>', "contact")]
+             p(f'<link href="{LINKEDIN}">linkedin.com/in/loredana-piazza</link> · '
+               f'<link href="{WEBSITE}/{lang}/">yulomja.github.io/personal-website</link>', "contact")]
     # Reserve a clear right column for the portrait without changing the
     # established header height or the readable one-page body layout.
     header = Table([[header_content, ""]], colWidths=[usable-34*mm, 34*mm])
