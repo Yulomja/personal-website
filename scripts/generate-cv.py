@@ -28,7 +28,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "pdf"
 PUBLIC = ROOT / "public" / "cv"
-PORTRAIT = ROOT / "public" / "images" / "loredana-piazza.jpg"
+PORTRAIT = ROOT / "assets" / "cv-portrait.jpg"
 INK = colors.HexColor("#20283F")
 MUTED = colors.HexColor("#596176")
 ACCENT = colors.HexColor("#5446A6")
@@ -49,8 +49,8 @@ CONTENT = {
         "profile": "Full-Stack Engineer at PostFinance AG, working on internal business applications and agentic software development. I share my knowledge in the internal AI Circle. Research at ETH Zurich and years of teaching have equipped me to share knowledge efficiently and explain complex topics clearly to people without a technical background.",
         "experience_label": "Experience",
         "experience": [
-            ("10/2025 - present", "Full-Stack Engineer", "PostFinance AG · Bern", "Development of internal business applications with Angular and Java/Spring Boot. Agentic software development with GitHub Copilot; practical work with Agent Engineering and Harness Engineering. Sharing my knowledge in the internal AI Circle."),
-            ("08/2024 - 02/2025", "Master's thesis", "ETH Zurich, Laboratory for Nanometallurgy", "Additive Manufacturing of Nanoporous Ag for SERS: experimental development, imaging analyses and evaluation of scientific measurement data."),
+            ("10/2025 - present", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Development of internal business applications with Angular and Java/Spring Boot. Agentic software development with GitHub Copilot; practical work with Agent Engineering and Harness Engineering. Sharing my knowledge in the internal AI Circle."),
+            ("08/2024 - 02/2025", "Master's thesis", "ETH Zurich, Laboratory for Nanometallurgy", "Compared electrohydrodynamically printed nanoporous silver with vapour-deposited samples to investigate how their nanoscale structure affects surface-enhanced Raman spectroscopy (SERS), as reported in our co-authored publication."),
             ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zurich", "Teaching in computer science and interdisciplinary courses taught me to explain complex topics clearly to people without a technical background. Head Teaching Assistant for Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
         "education_label": "Education",
@@ -80,8 +80,8 @@ CONTENT = {
         "profile": "Full-Stack Engineer bei PostFinance AG für interne Business-Applikationen und Agentic Software Development. Im internen AI Circle teile ich mein Wissen. Forschung an der ETH Zürich und mehrjährige Lehrpraxis helfen mir, Wissen effizient weiterzugeben und komplexe Themen auch Menschen ohne technischen Hintergrund verständlich zu erklären.",
         "experience_label": "Berufserfahrung",
         "experience": [
-            ("seit 10/2025", "Full-Stack Engineer", "PostFinance AG · Bern", "Entwicklung interner Business-Applikationen mit Angular und Java/Spring Boot. Agentic Software Development mit GitHub Copilot sowie praktische Arbeit mit Agent Engineering und Harness Engineering. Ich teile mein Wissen im internen AI Circle."),
-            ("08/2024 - 02/2025", "Masterarbeit", "ETH Zürich, Laboratory for Nanometallurgy", "Additive Manufacturing of Nanoporous Ag for SERS: experimentelle Entwicklung, bildgebende Analysen und Auswertung wissenschaftlicher Messdaten."),
+            ("seit 10/2025", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Entwicklung interner Business-Applikationen mit Angular und Java/Spring Boot. Agentic Software Development mit GitHub Copilot sowie praktische Arbeit mit Agent Engineering und Harness Engineering. Ich teile mein Wissen im internen AI Circle."),
+            ("08/2024 - 02/2025", "Masterarbeit", "ETH Zürich, Laboratory for Nanometallurgy", "Vergleich von elektrohydrodynamisch gedrucktem nanoporösem Silber mit aufgedampften Proben zur Untersuchung des Einflusses der Nanostruktur auf die oberflächenverstärkte Raman-Spektroskopie (SERS), dokumentiert in unserer gemeinsamen Publikation."),
             ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zürich", "Die Lehrtätigkeit in Informatik und interdisziplinären Kursen hat mich gelehrt, komplexe Themen für Menschen ohne technischen Hintergrund klar zu vermitteln. Head Teaching Assistant im Kurs Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
         "education_label": "Ausbildung",
@@ -122,7 +122,7 @@ def build(lang):
         "title": ParagraphStyle("title", fontName="VeraBold", fontSize=26, leading=31, textColor=INK),
         "role": ParagraphStyle("role", fontName="Vera", fontSize=11.5, leading=17, textColor=MUTED),
         "contact": ParagraphStyle("contact", fontName="Vera", fontSize=8.4, leading=12.5, textColor=MUTED),
-        "heading": ParagraphStyle("heading", fontName="VeraBold", fontSize=9.5, leading=13, textColor=ACCENT, spaceBefore=8.5, spaceAfter=5),
+        "heading": ParagraphStyle("heading", fontName="VeraBold", fontSize=9.5, leading=13, textColor=ACCENT, spaceBefore=7, spaceAfter=5),
         "entry": ParagraphStyle("entry", fontName="VeraBold", fontSize=9.1, leading=12.2, textColor=INK),
         "meta": ParagraphStyle("meta", fontName="Vera", fontSize=8.5, leading=11.7, textColor=MUTED),
         "date": ParagraphStyle("date", fontName="Vera", fontSize=7.6, leading=11.7, textColor=MUTED),
@@ -139,22 +139,21 @@ def build(lang):
     def footer(canvas, _doc):
         canvas.saveState()
         if _doc.page == 1:
-            # Frame a wider head-and-upper-body view of the candid original.
-            # PDF clipping preserves the full head and leaves the source intact.
-            photo_width, photo_height = 27 * mm, 30 * mm
+            # Fit the front-facing CV portrait without cropping the head.
+            # The dedicated source image stays untouched.
+            photo_width, photo_height = 25 * mm, 30 * mm
             photo_x = width - margin - photo_width
             photo_y = height - doc.topMargin - photo_height
             portrait = ImageReader(str(PORTRAIT))
             source_width, source_height = portrait.getSize()
-            crop_left, crop_top = source_width * 0.19, source_height * 0.11
-            crop_width, crop_height = source_width * 0.60, source_height * (4 / 9)
-            scale = max(photo_width / crop_width, photo_height / crop_height)
+            scale = min(photo_width / source_width, photo_height / source_height)
+            drawn_width, drawn_height = source_width * scale, source_height * scale
             clipping_path = canvas.beginPath()
             clipping_path.roundRect(photo_x, photo_y, photo_width, photo_height, 2.5)
             canvas.clipPath(clipping_path, stroke=0, fill=0)
-            canvas.drawImage(portrait, photo_x - crop_left * scale,
-                             photo_y + photo_height - (source_height - crop_top) * scale,
-                             width=source_width * scale, height=source_height * scale)
+            canvas.drawImage(portrait, photo_x + (photo_width - drawn_width) / 2,
+                             photo_y + (photo_height - drawn_height) / 2,
+                             width=drawn_width, height=drawn_height)
             canvas.restoreState()
             canvas.saveState()
         canvas.setStrokeColor(RULE)
