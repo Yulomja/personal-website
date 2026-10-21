@@ -46,10 +46,10 @@ CONTENT = {
     "en": {
         "location": "Zurich, Switzerland", "document": "Curriculum vitae",
         "profile_label": "Profile",
-        "profile": "Full-Stack Engineer at PostFinance AG, working on internal business applications and agentic software development. I share my knowledge in the internal AI Circle. Research at ETH Zurich and years of teaching have equipped me to share knowledge efficiently and explain complex topics clearly to people without a technical background.",
+        "profile": "Full-Stack Engineer and Product Owner, motivated by learning new technologies and working on projects with a clear purpose. I want to actively contribute my engineering experience, curiosity and analytical approach as a technical Product Owner. Clear communication and good teamwork are particularly important to me.",
         "experience_label": "Experience",
         "experience": [
-            ("10/2025 - present", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Development of internal business applications with Angular and Java/Spring Boot. Agentic software development with GitHub Copilot; practical work with Agent Engineering and Harness Engineering. Sharing my knowledge in the internal AI Circle."),
+            ("10/2025 - present", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Development of internal business applications with Angular and Java/Spring Boot. As Product Owner in ProcGen, I communicate with stakeholders and help connect business and technical perspectives. As a workplace trainer (Praxisbildnerin), I support apprentices and share knowledge through clear explanations and practical guidance."),
             ("08/2024 - 02/2025", "Master's thesis", "ETH Zurich, Laboratory for Nanometallurgy", "Compared electrohydrodynamically printed nanoporous silver with vapour-deposited samples to investigate how their nanoscale structure affects surface-enhanced Raman spectroscopy (SERS), as reported in our co-authored publication."),
             ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zurich", "Teaching in computer science and interdisciplinary courses taught me to explain complex topics clearly to people without a technical background. Head Teaching Assistant for Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
@@ -62,7 +62,7 @@ CONTENT = {
         "project": "An app in development for Business Analysts to support hypothesis-driven work: clearly formulating hypotheses, testing them systematically and documenting insights.",
         "skills_label": "Skills & languages",
         "skills": [
-            ("Development", "Java, Spring Boot, Angular, Python, scripting, full-stack development"),
+            ("Development", "Java, Spring Boot, Angular, Python, CI/CD, full-stack development"),
             ("Agentic engineering", "Agentic Software Development, Agent Engineering, Harness Engineering"),
             ("AI tools", "GitHub Copilot (professional); AWS Kiro, OpenAI Codex (personal projects)"),
             ("Methods", "Scrum, Product Ownership, knowledge sharing"),
@@ -72,16 +72,16 @@ CONTENT = {
         "certificate": "Professional Scrum Product Owner I (PSPO I)",
         "publication": "Co-author, 2025 · Porenta, Piazza &amp; Spolenak · <i>Discover Nano</i>",
         "interests_label": "Interests",
-        "interests": "Running, triathlon, flag football, fantasy reading, coding and hiking.",
+        "interests": "Jogging, triathlon, flag football, reading (mainly fantasy), coding and hiking.",
     },
     "de": {
         "location": "Zürich, Schweiz", "document": "Lebenslauf",
         "profile_label": "Profil",
-        "profile": "Full-Stack Engineer bei PostFinance AG für interne Business-Applikationen und Agentic Software Development. Im internen AI Circle teile ich mein Wissen. Forschung an der ETH Zürich und mehrjährige Lehrpraxis helfen mir, Wissen effizient weiterzugeben und komplexe Themen auch Menschen ohne technischen Hintergrund verständlich zu erklären.",
+        "profile": "Full-Stack Engineer und Product Ownerin. Mich motivieren das Lernen neuer Technologien und Projekte mit einem klaren Sinn und Zweck. Meine Entwicklungserfahrung, Neugier und analytische Herangehensweise möchte ich als technische Product Ownerin aktiv einbringen. Klare Kommunikation und gute Zusammenarbeit im Team sind mir besonders wichtig.",
         "experience_label": "Berufserfahrung",
         "experience": [
-            ("seit 10/2025", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Entwicklung interner Business-Applikationen mit Angular und Java/Spring Boot. Agentic Software Development mit GitHub Copilot sowie praktische Arbeit mit Agent Engineering und Harness Engineering. Ich teile mein Wissen im internen AI Circle."),
-            ("08/2024 - 02/2025", "Masterarbeit", "ETH Zürich, Laboratory for Nanometallurgy", "Vergleich von elektrohydrodynamisch gedrucktem nanoporösem Silber mit aufgedampften Proben zur Untersuchung des Einflusses der Nanostruktur auf die oberflächenverstärkte Raman-Spektroskopie (SERS), dokumentiert in unserer gemeinsamen Publikation."),
+            ("seit 10/2025", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Entwicklung interner Anwendungen mit Angular und Java/Spring Boot. Als Product Ownerin in ProcGen stehe ich im Austausch mit Stakeholdern und unterstütze die Verständigung zwischen fachlichen und technischen Perspektiven. Als Praxisbildnerin begleite ich Lernende und fördere den Wissenstransfer durch verständliche Erklärungen und praktische Unterstützung."),
+            ("08/2024 - 02/2025", "Masterarbeit", "ETH Zürich, Laboratory for Nanometallurgy", "Vergleich von elektrohydrodynamisch gedrucktem nanoporösem Silber mit mittels physical vapour deposition (PVD) hergestellten Proben zur Untersuchung des Einflusses der Nanostruktur auf surface-enhanced Raman spectroscopy (SERS), dokumentiert in unserer gemeinsamen Publikation."),
             ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zürich", "Die Lehrtätigkeit in Informatik und interdisziplinären Kursen hat mich gelehrt, komplexe Themen für Menschen ohne technischen Hintergrund klar zu vermitteln. Head Teaching Assistant im Kurs Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
         "education_label": "Ausbildung",
@@ -93,7 +93,7 @@ CONTENT = {
         "project": "App in Entwicklung für Business Analysts, die hypothesenbasiertes Arbeiten unterstützt: Hypothesen klar formulieren, strukturiert überprüfen und Erkenntnisse nachvollziehbar festhalten.",
         "skills_label": "Kompetenzen & Sprachen",
         "skills": [
-            ("Entwicklung", "Java, Spring Boot, Angular, Python, Scripting, Full-Stack-Entwicklung"),
+            ("Entwicklung", "Java, Spring Boot, Angular, Python, CI/CD, Full-Stack-Entwicklung"),
             ("Agentic Engineering", "Agentic Software Development, Agent Engineering, Harness Engineering"),
             ("AI-Werkzeuge", "GitHub Copilot (beruflich); AWS Kiro, OpenAI Codex (private Projekte)"),
             ("Methoden", "Scrum, Product Ownership, Wissensvermittlung"),
@@ -103,7 +103,7 @@ CONTENT = {
         "certificate": "Professional Scrum Product Owner I (PSPO I)",
         "publication": "Co-Autorin, 2025 · Porenta, Piazza &amp; Spolenak · <i>Discover Nano</i>",
         "interests_label": "Interessen",
-        "interests": "Laufen, Triathlon, Flag Football, Fantasy-Literatur, Coding und Wandern.",
+        "interests": "Joggen, Triathlon, Flag Football, Lesen (hauptsächlich Fantasy), Coding und Wandern.",
     },
 }
 
@@ -117,12 +117,13 @@ def register_fonts():
 
 def build(lang):
     data = CONTENT[lang]
+    heading_before, heading_after = (4, 3.5) if lang == "de" else (5, 4)
     styles = {
         "body": ParagraphStyle("body", fontName="Vera", fontSize=9.0, leading=12.1, textColor=INK, alignment=TA_LEFT),
         "title": ParagraphStyle("title", fontName="VeraBold", fontSize=26, leading=31, textColor=INK),
         "role": ParagraphStyle("role", fontName="Vera", fontSize=11.5, leading=17, textColor=MUTED),
         "contact": ParagraphStyle("contact", fontName="Vera", fontSize=8.4, leading=12.5, textColor=MUTED),
-        "heading": ParagraphStyle("heading", fontName="VeraBold", fontSize=9.5, leading=13, textColor=ACCENT, spaceBefore=7, spaceAfter=5),
+        "heading": ParagraphStyle("heading", fontName="VeraBold", fontSize=9.5, leading=13, textColor=ACCENT, spaceBefore=heading_before, spaceAfter=heading_after),
         "entry": ParagraphStyle("entry", fontName="VeraBold", fontSize=9.1, leading=12.2, textColor=INK),
         "meta": ParagraphStyle("meta", fontName="Vera", fontSize=8.5, leading=11.7, textColor=MUTED),
         "date": ParagraphStyle("date", fontName="Vera", fontSize=7.6, leading=11.7, textColor=MUTED),
@@ -197,7 +198,7 @@ def build(lang):
                                    ("RIGHTPADDING", (0, 0), (0, -1), 8),
                                    ("RIGHTPADDING", (1, 0), (1, -1), 0),
                                    ("TOPPADDING", (0, 0), (-1, -1), 0),
-                                   ("BOTTOMPADDING", (0, 0), (-1, -1), 5)]))
+                                   ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
         return table
 
     section(data["profile_label"], [p(data["profile"])])
