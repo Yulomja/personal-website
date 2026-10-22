@@ -56,7 +56,7 @@ CONTENT = {
         "education_label": "Education",
         "education": [
             ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zurich · Specialisation in Bioimaging", "Focus on applied machine learning for MRI and CT."),
-            ("09/2019 - 01/2023", "B.Sc. Health Sciences and Technology", "ETH Zurich", ""),
+            ("09/2019 - 01/2023", "B.Sc. Health Sciences and Technology", "ETH Zurich", "Focus on medical technology."),
         ],
         "project_label": "Personal project",
         "project": "An app in development for Business Analysts to support hypothesis-driven work: clearly formulating hypotheses, testing them systematically and documenting insights.",
@@ -87,7 +87,7 @@ CONTENT = {
         "education_label": "Ausbildung",
         "education": [
             ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zürich · Vertiefung Bioimaging", "Fokus auf angewandtes maschinelles Lernen für MRT und CT."),
-            ("09/2019 - 01/2023", "B.Sc. Gesundheitswissenschaften und Technologie", "ETH Zürich", ""),
+            ("09/2019 - 01/2023", "B.Sc. Gesundheitswissenschaften und Technologie", "ETH Zürich", "Fokus auf Medizintechnik."),
         ],
         "project_label": "Persönliches Projekt",
         "project": "App in Entwicklung für Business Analysts, die hypothesenbasiertes Arbeiten unterstützt: Hypothesen klar formulieren, strukturiert überprüfen und Erkenntnisse nachvollziehbar festhalten.",
@@ -118,8 +118,9 @@ def register_fonts():
 def build(lang):
     data = CONTENT[lang]
     heading_before, heading_after = (4, 3.5) if lang == "de" else (5, 4)
+    body_leading = 11.8 if lang == "de" else 12.1
     styles = {
-        "body": ParagraphStyle("body", fontName="Vera", fontSize=9.0, leading=12.1, textColor=INK, alignment=TA_LEFT),
+        "body": ParagraphStyle("body", fontName="Vera", fontSize=9.0, leading=body_leading, textColor=INK, alignment=TA_LEFT),
         "title": ParagraphStyle("title", fontName="VeraBold", fontSize=26, leading=31, textColor=INK),
         "role": ParagraphStyle("role", fontName="Vera", fontSize=11.5, leading=17, textColor=MUTED),
         "contact": ParagraphStyle("contact", fontName="Vera", fontSize=8.4, leading=12.5, textColor=MUTED),
