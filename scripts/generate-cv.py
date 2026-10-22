@@ -48,17 +48,17 @@ CONTENT = {
         "profile": "Full-Stack Engineer and Product Owner, motivated by learning new technologies and working on projects with a clear purpose. I want to actively contribute my engineering experience, curiosity and analytical approach as a technical Product Owner. Clear communication and good teamwork are particularly important to me.",
         "experience_label": "Experience",
         "experience": [
-            ("10/2025 - present", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Development of internal business applications with Angular and Java/Spring Boot. As Product Owner in ProcGen, I communicate with stakeholders and help connect business and technical perspectives. As a workplace trainer (Praxisbildnerin), I support apprentices and share knowledge through clear explanations and practical guidance."),
-            ("08/2024 - 02/2025", "Master's thesis", "ETH Zurich, Laboratory for Nanometallurgy", "Compared electrohydrodynamically printed nanoporous silver with vapour-deposited samples to investigate how their nanoscale structure affects surface-enhanced Raman spectroscopy (SERS), as reported in our co-authored publication."),
-            ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zurich", "Teaching in computer science and interdisciplinary courses taught me to explain complex topics clearly to people without a technical background. Head Teaching Assistant for Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
+            ("10/2025 - present", "Full-Stack Engineer / Product Owner", "PostFinance AG · Bern · ST machbar", "I develop internal applications with Angular and Java/Spring Boot and connect business requirements with technical implementation as a Product Owner. Communicating with stakeholders and sharing knowledge are part of my daily work, including supporting apprentices as a workplace trainer."),
+            ("02/2021 - 01/2025", "(Head) Teaching Assistant", "ETH Zurich", "Teaching in computer science and interdisciplinary courses taught me to explain complex topics clearly to people without a technical background. Head Teaching Assistant for Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
         "education_label": "Education",
         "education": [
             ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zurich · Specialisation in Bioimaging", "Focus on applied machine learning for MRI and CT. Skills acquired: Python, PyTorch, TensorFlow, SciPy and MATLAB, alongside self-organisation."),
             ("09/2019 - 01/2023", "B.Sc. Health Sciences and Technology", "ETH Zurich", "Focus on medical technology and exoskeletons."),
         ],
-        "project_label": "Personal project",
-        "project": "An app in development for Business Analysts to support hypothesis-driven work: clearly formulating hypotheses, testing them systematically and documenting insights.",
+        "thesis": "Master's thesis (08/2024 - 02/2025): Compared electrohydrodynamically printed nanoporous silver with samples produced by physical vapour deposition (PVD) to investigate how their nanoscale structure affects surface-enhanced Raman spectroscopy (SERS); see publication below.",
+        "project_label": "Software project",
+        "project": "I am developing an app that helps business analysts connect notes, hypotheses and evidence, and keep a clear record of their findings.",
         "skills_label": "Skills & languages",
         "skills": [
             ("Development", "Java, Spring Boot, Angular, Python, CI/CD, full-stack development"),
@@ -67,11 +67,12 @@ CONTENT = {
             ("Methods", "Scrum, Product Ownership, knowledge sharing"),
             ("Languages", "German: native · English: C1/C2"),
         ],
-        "credentials_label": "Certification & publication",
+        "certificate_label": "Certification",
+        "publication_label": "Publication",
         "certificate": "Professional Scrum Product Owner I (PSPO I)",
         "publication": "Co-author, 2025 · Porenta, Piazza &amp; Spolenak · <i>Discover Nano</i>",
         "interests_label": "Interests",
-        "interests": "Jogging, triathlon, flag football, reading (mainly fantasy), coding and hiking.",
+        "interests": "Jogging, triathlon, flag football, reading, coding and hiking.",
     },
     "de": {
         "location": "Zürich, Schweiz", "document": "Lebenslauf",
@@ -79,17 +80,17 @@ CONTENT = {
         "profile": "Full-Stack Engineer und Product Ownerin. Mich motivieren das Lernen neuer Technologien und Projekte mit einem klaren Sinn und Zweck. Meine Entwicklungserfahrung, Neugier und analytische Herangehensweise möchte ich als technische Product Ownerin aktiv einbringen. Klare Kommunikation und gute Zusammenarbeit im Team sind mir besonders wichtig.",
         "experience_label": "Berufserfahrung",
         "experience": [
-            ("seit 10/2025", "Full-Stack Engineer", "PostFinance AG · Bern · ST machbar", "Entwicklung interner Anwendungen mit Angular und Java/Spring Boot. Als Product Ownerin in ProcGen stehe ich im Austausch mit Stakeholdern und unterstütze die Verständigung zwischen fachlichen und technischen Perspektiven. Als Praxisbildnerin begleite ich Lernende und fördere den Wissenstransfer durch verständliche Erklärungen und praktische Unterstützung."),
-            ("08/2024 - 02/2025", "Masterarbeit", "ETH Zürich, Laboratory for Nanometallurgy", "Vergleich von elektrohydrodynamisch gedrucktem nanoporösem Silber mit mittels physical vapour deposition (PVD) hergestellten Proben zur Untersuchung des Einflusses der Nanostruktur auf surface-enhanced Raman spectroscopy (SERS), dokumentiert in unserer gemeinsamen Publikation."),
-            ("02/2021 - 01/2025", "Teaching Assistant / Head Teaching Assistant", "ETH Zürich", "Die Lehrtätigkeit in Informatik und interdisziplinären Kursen hat mich gelehrt, komplexe Themen für Menschen ohne technischen Hintergrund klar zu vermitteln. Head Teaching Assistant im Kurs Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
+            ("seit 10/2025", "Full-Stack Engineer / Product Owner", "PostFinance AG · Bern · ST machbar", "Ich entwickle interne Anwendungen mit Angular und Java/Spring Boot und verbinde als Product Owner fachliche Anforderungen mit der technischen Umsetzung. Der Austausch mit Stakeholdern und die Weitergabe von Wissen gehören dabei zu meinem Alltag - auch bei der Begleitung von Lernenden als Praxisbildnerin."),
+            ("02/2021 - 01/2025", "(Head) Teaching Assistant", "ETH Zürich", "Die Lehrtätigkeit in Informatik und interdisziplinären Kursen hat mich gelehrt, komplexe Themen für Menschen ohne technischen Hintergrund klar zu vermitteln. Head Teaching Assistant im Kurs Materials and Mechanics in Medicine (09/2024 - 01/2025)."),
         ],
         "education_label": "Ausbildung",
         "education": [
             ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zürich · Vertiefung Bioimaging", "Fokus auf angewandtes maschinelles Lernen für MRT und CT. Kompetenzen: Python, PyTorch, TensorFlow, SciPy und MATLAB; Selbstorganisation."),
             ("09/2019 - 01/2023", "B.Sc. Gesundheitswissenschaften und Technologie", "ETH Zürich", "Fokus auf Medizintechnik und Exoskelette."),
         ],
-        "project_label": "Persönliches Projekt",
-        "project": "App in Entwicklung für Business Analysts, die hypothesenbasiertes Arbeiten unterstützt: Hypothesen klar formulieren, strukturiert überprüfen und Erkenntnisse nachvollziehbar festhalten.",
+        "thesis": "Masterarbeit (08/2024 - 02/2025): Vergleich von elektrohydrodynamisch gedrucktem nanoporösem Silber mit mittels physical vapour deposition (PVD) hergestellten Proben zur Untersuchung des Einflusses der Nanostruktur auf surface-enhanced Raman spectroscopy (SERS); siehe Publikation unten.",
+        "project_label": "Softwareprojekt",
+        "project": "Ich entwickle eine App, die Business Analysts dabei unterstützt, Notizen, Hypothesen und Belege zu verknüpfen und Erkenntnisse nachvollziehbar festzuhalten.",
         "skills_label": "Kompetenzen & Sprachen",
         "skills": [
             ("Entwicklung", "Java, Spring Boot, Angular, Python, CI/CD, Full-Stack-Entwicklung"),
@@ -98,11 +99,12 @@ CONTENT = {
             ("Methoden", "Scrum, Product Ownership, Wissensvermittlung"),
             ("Sprachen", "Deutsch: Muttersprache · Englisch: C1/C2"),
         ],
-        "credentials_label": "Zertifikat & Publikation",
+        "certificate_label": "Zertifikat",
+        "publication_label": "Publikation",
         "certificate": "Professional Scrum Product Owner I (PSPO I)",
         "publication": "Co-Autorin, 2025 · Porenta, Piazza &amp; Spolenak · <i>Discover Nano</i>",
         "interests_label": "Interessen",
-        "interests": "Joggen, Triathlon, Flag Football, Lesen (hauptsächlich Fantasy), Coding und Wandern.",
+        "interests": "Joggen, Triathlon, Flag Football, Lesen, Coding und Wandern.",
     },
 }
 
@@ -170,7 +172,7 @@ def build(lang):
                   leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
     doc.addPageTemplates(PageTemplate(id="CV", frames=frame, onPage=footer))
     p = lambda text, style="body": Paragraph(text, styles[style])
-    header_content = [p("Loredana Piazza", "title"), p("Full-Stack Engineer", "role"), Spacer(1, 5),
+    header_content = [p("Loredana Piazza", "title"), p("Full-Stack Engineer / Product Owner", "role"), Spacer(1, 5),
              p(f'{data["location"]} · <link href="mailto:{EMAIL}">{EMAIL}</link>', "contact"),
              p(f'<link href="{LINKEDIN}">linkedin.com/in/loredana-piazza</link>', "contact")]
     # Reserve a clear right column for the portrait without changing the
@@ -186,11 +188,14 @@ def build(lang):
     def section(label, content):
         story.append(KeepTogether([p(label.upper(), "heading"), *content]))
 
-    def entry(item):
+    def entry(item, thesis=None):
         date, title, org, description = item
         content = [p(escape(title), "entry"), p(escape(org), "meta")]
         if description:
             content.extend([Spacer(1, 2), p(escape(description))])
+        if thesis:
+            thesis_label, thesis_description = thesis.split(": ", 1)
+            content.extend([Spacer(1, 4), p(f"<b>{escape(thesis_label)}:</b> {escape(thesis_description)}")])
         table = Table([[p(date, "date"), content]], colWidths=[91, usable-91])
         table.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
                                    ("LEFTPADDING", (0, 0), (-1, -1), 0),
@@ -202,7 +207,8 @@ def build(lang):
 
     section(data["profile_label"], [p(data["profile"])])
     section(data["experience_label"], [entry(i) for i in data["experience"]])
-    section(data["education_label"], [entry(i) for i in data["education"]])
+    section(data["education_label"], [entry(item, data["thesis"] if index == 0 else None)
+                                       for index, item in enumerate(data["education"])])
     section(data["project_label"], [p("notably.", "entry"), Spacer(1, 2), p(data["project"])])
     skills = Table([[p(a, "skill"), p(b)] for a, b in data["skills"]], colWidths=[110, usable-110])
     skills.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
@@ -211,8 +217,9 @@ def build(lang):
                                ("TOPPADDING", (0, 0), (-1, -1), 0),
                                ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
     section(data["skills_label"], [skills])
-    section(data["credentials_label"], [p(f'<b>{data["certificate"]}</b> · Scrum.org, 07/2026'),
-        Spacer(1, 5), p(data["publication"], "meta"),
+    section(data["certificate_label"], [p(f'<b>{data["certificate"]}</b> · Scrum.org, 07/2026')])
+    story.append(Spacer(1, 3))
+    section(data["publication_label"], [p(data["publication"], "meta"),
         p(f'{TITLE}. <link href="{DOI}" color="#5446A6">doi:10.1186/s11671-025-04409-1</link>')])
     section(data["interests_label"], [p(data["interests"])])
     doc.build(story)
