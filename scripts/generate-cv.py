@@ -55,8 +55,8 @@ CONTENT = {
         ],
         "education_label": "Education",
         "education": [
-            ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zurich · Specialisation in Bioimaging", "Focus on applied machine learning for MRI and CT."),
-            ("09/2019 - 01/2023", "B.Sc. Health Sciences and Technology", "ETH Zurich", "Focus on medical technology."),
+            ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zurich · Specialisation in Bioimaging", "Focus on applied machine learning for MRI and CT. Skills acquired: Python, PyTorch, TensorFlow, SciPy and MATLAB, alongside self-organisation."),
+            ("09/2019 - 01/2023", "B.Sc. Health Sciences and Technology", "ETH Zurich", "Focus on medical technology and exoskeletons."),
         ],
         "project_label": "Personal project",
         "project": "An app in development for Business Analysts to support hypothesis-driven work: clearly formulating hypotheses, testing them systematically and documenting insights.",
@@ -86,8 +86,8 @@ CONTENT = {
         ],
         "education_label": "Ausbildung",
         "education": [
-            ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zürich · Vertiefung Bioimaging", "Fokus auf angewandtes maschinelles Lernen für MRT und CT."),
-            ("09/2019 - 01/2023", "B.Sc. Gesundheitswissenschaften und Technologie", "ETH Zürich", "Fokus auf Medizintechnik."),
+            ("09/2022 - 02/2025", "M.Sc. Biomedical Engineering", "ETH Zürich · Vertiefung Bioimaging", "Fokus auf angewandtes maschinelles Lernen für MRT und CT. Kompetenzen: Python, PyTorch, TensorFlow, SciPy und MATLAB; Selbstorganisation."),
+            ("09/2019 - 01/2023", "B.Sc. Gesundheitswissenschaften und Technologie", "ETH Zürich", "Fokus auf Medizintechnik und Exoskelette."),
         ],
         "project_label": "Persönliches Projekt",
         "project": "App in Entwicklung für Business Analysts, die hypothesenbasiertes Arbeiten unterstützt: Hypothesen klar formulieren, strukturiert überprüfen und Erkenntnisse nachvollziehbar festhalten.",
@@ -117,7 +117,7 @@ def register_fonts():
 
 def build(lang):
     data = CONTENT[lang]
-    heading_before, heading_after = (4, 3.5) if lang == "de" else (5, 4)
+    heading_before, heading_after = (3.5, 3) if lang == "de" else (5, 4)
     body_leading = 11.8 if lang == "de" else 12.1
     styles = {
         "body": ParagraphStyle("body", fontName="Vera", fontSize=9.0, leading=body_leading, textColor=INK, alignment=TA_LEFT),
@@ -135,7 +135,7 @@ def build(lang):
     usable = width - margin * 2
     path = OUT / f"loredana-piazza-{lang}.pdf"
     doc = BaseDocTemplate(str(path), pagesize=A4, leftMargin=margin, rightMargin=margin,
-                          topMargin=14 * mm, bottomMargin=13 * mm,
+                          topMargin=(12 if lang == "de" else 14) * mm, bottomMargin=13 * mm,
                           title=f"Loredana Piazza - {data['document']}", author="Loredana Piazza")
 
     def footer(canvas, _doc):

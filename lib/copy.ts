@@ -22,8 +22,8 @@ export const copy = {
       { date: 'February 2021 – January 2025', title: 'Teaching Assistant / Head Teaching Assistant', organisation: 'ETH Zurich', text: 'Supporting students and teaching technical content in computer science and interdisciplinary courses. Head Teaching Assistant for Materials and Mechanics in Medicine from September 2024 to January 2025. This experience taught me to communicate technical ideas clearly, including to people without a technical background.' },
     ],
     educationItems: [
-      { date: 'September 2022 – February 2025', title: 'M.Sc. Biomedical Engineering', organisation: 'ETH Zurich', text: 'Specialisation in Bioimaging, with a focus on applied machine learning for MRI and CT.' },
-      { date: 'September 2019 – January 2023', title: 'B.Sc. Health Sciences and Technology', organisation: 'ETH Zurich', text: 'Focus on medical technology.' },
+      { date: 'September 2022 – February 2025', title: 'M.Sc. Biomedical Engineering', organisation: 'ETH Zurich', text: 'Specialisation in Bioimaging, with a focus on applied machine learning for MRI and CT. Skills acquired: Python, PyTorch, TensorFlow, SciPy and MATLAB, alongside self-organisation.' },
+      { date: 'September 2019 – January 2023', title: 'B.Sc. Health Sciences and Technology', organisation: 'ETH Zurich', text: 'Focus on medical technology and exoskeletons.' },
     ],
     skillItems: [
       { title: "Development", text: "Java, Spring Boot, Angular, Python, CI/CD, full-stack development" },
@@ -54,8 +54,8 @@ export const copy = {
       { date: 'Februar 2021 – Januar 2025', title: 'Teaching Assistant / Head Teaching Assistant', organisation: 'ETH Zürich', text: 'Fachliche Betreuung von Studierenden und Vermittlung technischer Inhalte in Informatik und interdisziplinären Lehrveranstaltungen. Head Teaching Assistant im Kurs Materials and Mechanics in Medicine von September 2024 bis Januar 2025. Dabei habe ich gelernt, technische Inhalte verständlich zu vermitteln – auch an Menschen ohne technischen Hintergrund.' },
     ],
     educationItems: [
-      { date: 'September 2022 – Februar 2025', title: 'M.Sc. Biomedical Engineering', organisation: 'ETH Zürich', text: 'Vertiefung Bioimaging mit Fokus auf angewandtes maschinelles Lernen für MRI und CT.' },
-      { date: 'September 2019 – Januar 2023', title: 'B.Sc. Gesundheitswissenschaften und Technologie', organisation: 'ETH Zürich', text: 'Fokus auf Medizintechnik.' },
+      { date: 'September 2022 – Februar 2025', title: 'M.Sc. Biomedical Engineering', organisation: 'ETH Zürich', text: 'Vertiefung Bioimaging mit Fokus auf angewandtes maschinelles Lernen für MRI und CT. Erworbene Kompetenzen: Python, PyTorch, TensorFlow, SciPy und MATLAB sowie Selbstorganisation.' },
+      { date: 'September 2019 – Januar 2023', title: 'B.Sc. Gesundheitswissenschaften und Technologie', organisation: 'ETH Zürich', text: 'Fokus auf Medizintechnik und Exoskelette.' },
     ],
     skillItems: [
       { title: "Entwicklung", text: "Java, Spring Boot, Angular, Python, CI/CD, Full-Stack-Entwicklung" },
