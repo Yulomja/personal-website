@@ -35,7 +35,6 @@ ACCENT = colors.HexColor("#5446A6")
 RULE = colors.HexColor("#DDE0EA")
 EMAIL = "piazza.loredana@hotmail.com"
 LINKEDIN = "https://ch.linkedin.com/in/loredana-piazza"
-WEBSITE = "https://yulomja.github.io/personal-website"
 DOI = "https://doi.org/10.1186/s11671-025-04409-1"
 TITLE = (
     "Electrohydrodynamic redox printing vs. physical vapour deposition: "
@@ -173,8 +172,7 @@ def build(lang):
     p = lambda text, style="body": Paragraph(text, styles[style])
     header_content = [p("Loredana Piazza", "title"), p("Full-Stack Engineer", "role"), Spacer(1, 5),
              p(f'{data["location"]} · <link href="mailto:{EMAIL}">{EMAIL}</link>', "contact"),
-             p(f'<link href="{LINKEDIN}">linkedin.com/in/loredana-piazza</link> · '
-               f'<link href="{WEBSITE}/{lang}/">yulomja.github.io/personal-website</link>', "contact")]
+             p(f'<link href="{LINKEDIN}">linkedin.com/in/loredana-piazza</link>', "contact")]
     # Reserve a clear right column for the portrait without changing the
     # established header height or the readable one-page body layout.
     header = Table([[header_content, ""]], colWidths=[usable-34*mm, 34*mm])
